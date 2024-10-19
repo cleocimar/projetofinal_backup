@@ -8,8 +8,8 @@ from core.models import Usuario, Aula, Comentario, UsuarioAula, AnexoAula, Anexo
 
 @admin.register(models.Usuario)
 class Usuario(admin.ModelAdmin):
-    list_display = ['id', 'nome', 'email', 'apelido', 'senha', 'perfil']
-    list_display_links = ['id', 'nome', 'email', 'apelido', 'senha', 'perfil']
+    list_display = ['id', 'nome', 'apelido', 'password', 'perfil']
+    list_display_links = ['id', 'nome', 'apelido', 'password', 'perfil']
 
 
 @admin.register(models.Aula)

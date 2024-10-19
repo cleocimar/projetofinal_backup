@@ -2,29 +2,29 @@
 /**********************
  USUARIO
  **********************/
-INSERT INTO usuario (id, email, nome, apelido, senha, perfil,created_at, modified_at, active)
-VALUES (1,'maurosouza@gmail.com','Mauro Souza','Mauro',123456,'P','2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+INSERT INTO usuario (id, username, nome, apelido, password, perfil, is_staff, is_superuser, created_at, modified_at, active)
+VALUES (2,'maurosouza@gmail.com','Mauro Souza','Mauro',123456,'P',True,True,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
-INSERT INTO usuario  (id, email, nome, apelido, senha, perfil,created_at, modified_at, active)
-VALUES (2,'marinasilva@gmail.com','Marina Silva','Marina',123456,'P','2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+INSERT INTO usuario (id, username, nome, apelido, password, perfil, is_staff, is_superuser, created_at, modified_at, active)
+VALUES (3,'marinasilva@gmail.com','Marina Silva','Marina',123456,'P',True,True,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
-INSERT INTO usuario  (id, email, nome, apelido, senha, perfil,created_at, modified_at, active)
-VALUES (3,'olavobilac@gmail.com','Olavo Bilac','Olavo',123456,'P','2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+INSERT INTO usuario (id, username, nome, apelido, password, perfil, is_staff, is_superuser, created_at, modified_at, active)
+VALUES (4,'olavobilac@gmail.com','Olavo Bilac','Olavo',123456,'P',True,True,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
-INSERT INTO usuario  (id, email, nome, apelido, senha, perfil,created_at, modified_at, active)
-VALUES (4,'luladasilva@gmail.com','Lula da Silva','Lula',123456,'I','2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+INSERT INTO usuario (id, username, nome, apelido, password, perfil, is_staff, is_superuser, created_at, modified_at, active)
+VALUES (5,'luladasilva@gmail.com','Lula da Silva','Lula',123456,'I',True,True,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
-INSERT INTO usuario  (id, email, nome, apelido, senha, perfil,created_at, modified_at, active)
-VALUES (5,'alexandremoraes@gmail.com','Alexandre Moraes','Xandão',123456,'I','2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+INSERT INTO usuario (id, username, nome, apelido, password, perfil, is_staff, is_superuser, created_at, modified_at, active)
+VALUES (6,'alexandremoraes@gmail.com','Alexandre Moraes','Xandão',123456,'I',True,True,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
-INSERT INTO usuario  (id, email, nome, apelido, senha, perfil,created_at, modified_at, active)
-VALUES (6,'marciomedeiros@gmail.com','Mercio Medeiros','Marcio',123456,'P','2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+INSERT INTO usuario (id, username, nome, apelido, password, perfil, is_staff, is_superuser, created_at, modified_at, active)
+VALUES (7,'marciomedeiros@gmail.com','Mercio Medeiros','Marcio',123456,'P',True,True,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
-INSERT INTO usuario  (id, email, nome, apelido, senha, perfil,created_at, modified_at, active)
-VALUES (7,'messiasbolsonaro@gmail.com','Messias Bolsonaro','Bolsorano',123456,'I','2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+INSERT INTO usuario (id, username, nome, apelido, password, perfil, is_staff, is_superuser, created_at, modified_at, active)
+VALUES (8,'messiasbolsonaro@gmail.com','Messias Bolsonaro','Bolsorano',123456,'I',True,True,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
-INSERT INTO usuario  (id, email, nome, apelido, senha, perfil,created_at, modified_at, active)
-VALUES (8,'romario@gmail.com','Romario Jogador','Romario',123456,'I','2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+INSERT INTO usuario (id, username, nome, apelido, password, perfil, is_staff, is_superuser, created_at, modified_at, active)
+VALUES (9,'romario@gmail.com','Romario Jogador','Romario',123456,'I',True,True,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 
 
@@ -81,29 +81,29 @@ VALUES (5,2,'Pesquisa sobre Graphos','F', 'J', 'c:\anexos','2024-10-07 01:55:02'
  ***********************************/
  -- Aula 1: com três Usuarios e um Instrutor
 INSERT INTO usuario_aula (id, id_usuario, id_aula, created_at, modified_at, active)
-VALUES (1, 1, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (1, 2, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 INSERT INTO usuario_aula (id, id_usuario, id_aula, created_at, modified_at, active)
-VALUES (2, 2, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (2, 3, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 INSERT INTO usuario_aula (id, id_usuario, id_aula, created_at, modified_at, active)
-VALUES (3, 3, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (3, 4, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 INSERT INTO usuario_aula (id, id_usuario, id_aula, created_at, modified_at, active)
-VALUES (4, 4, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (4, 5, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
  --Instrutor (Lula)
 
 -- Aula 2: com um Usuario e um Instutor
 INSERT INTO usuario_aula (id, id_usuario, id_aula, created_at, modified_at, active)
-VALUES (5,5, 2,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (5,6, 2,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
  --Instrutor (Xandão)
 INSERT INTO usuario_aula (id, id_usuario, id_aula, created_at, modified_at, active)
-VALUES (6,6, 2,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (6,7, 2,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 
 -- Aula 3: sem Usuario e somente com um Instrutor
 INSERT INTO usuario_aula (id, id_usuario, id_aula, created_at, modified_at, active)
-VALUES (7,7, 3,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (7,8, 3,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
  --Instrutor (Bolsonaro)
 
 -- Aula 4: sem Usuario e somente com o instrutor
@@ -123,22 +123,22 @@ VALUES (8,8, 4,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 --Instrutor
 INSERT INTO comentario (id, data_comentario, texto, tipo, id_aula, id_usuario, created_at, modified_at, active)
-VALUES (1, now(), 'Não esqueçam de fazer os exercícios e treinar nas bastante na ferramenta UML, estudem bastante', 'P', 1, 4,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (1, now(), 'Não esqueçam de fazer os exercícios e treinar nas bastante na ferramenta UML, estudem bastante', 'P', 1, 5,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 INSERT INTO comentario (id, data_comentario, texto, tipo, id_aula, id_usuario, created_at, modified_at, active)
-VALUES (2, now(), 'Eu conheço bem esse assunto, quem quiser umas a explicações a mais, me contato no meu zap mas e sendo muito (92) 99138-9431 pela parte da tarde', 'P', 1, 1,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (2, now(), 'Eu conheço bem esse assunto, quem quiser umas a explicações a mais, me contato no meu zap mas e sendo muito (92) 99138-9431 pela parte da tarde', 'P', 1, 2,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 INSERT INTO comentario (id, data_comentario, texto, tipo, id_aula, id_usuario, created_at, modified_at, active)
-VALUES (3, now(), 'Eu vou quere umas aulas, vamos na combinar, mas pela manhã é melhor', 'O', 1, 2,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (3, now(), 'Eu vou quere umas aulas, vamos na combinar, mas pela manhã é melhor', 'O', 1, 3,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 INSERT INTO comentario (id, data_comentario, texto, tipo, id_aula, id_usuario, created_at, modified_at, active)
-VALUES (4, now(), 'A UML é a modelagem padrão para sistemas de TI', 'O', 1, 2,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (4, now(), 'A UML é a modelagem padrão para sistemas de TI', 'O', 1, 3,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 INSERT INTO comentario (id, data_comentario, texto, tipo, id_aula, id_usuario, created_at, modified_at, active)
-VALUES (5, now(), 'Foto de capa de um livro e um postcast top............', 'P', 1, 3,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (5, now(), 'Foto de capa de um livro e um postcast top............', 'P', 1, 4,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 INSERT INTO comentario (id, data_comentario, texto, tipo, id_aula, id_usuario, created_at, modified_at, active)
-VALUES (6, now(), 'Anexei duas apostilas de exercício de UML blá...', 'P', 1, 2,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
+VALUES (6, now(), 'Anexei duas apostilas de exercício de UML blá...', 'P', 1, 3,'2024-10-07 01:55:02','2024-10-07 01:55:02',TRUE);
 
 
 
