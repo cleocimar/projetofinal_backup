@@ -1,4 +1,4 @@
--- Active: 1728350194217@@127.0.0.1@5433@caderno@public
+-- Active: 1728143183557@@127.0.0.1@5433@caderno
 /* Visualização de comentários e opiniões de Instrutor e Usuarios em uma Aula juntamente com seus Anexos */
 select coalesce( c.id, 0 ) as id_comentario,
        case when coalesce( c.tipo,'')='P' then 'próprio'
@@ -43,7 +43,8 @@ select /* Aula */
        case when coalesce( u.perfil,'')='I' then 'Instrutor'
             when coalesce( u.perfil,'')='P' then 'Usuario' else 'não identificado'
        end as perfil_descricao,
-       coalesce( u.email  , '' ) as email,
+       u.is_superuser,
+       u.is_staff,
        coalesce( u.nome   , '' ) as nome_participante,
        coalesce( u.apelido, '' ) as apelido
 from usuario_aula ua
