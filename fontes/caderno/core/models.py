@@ -1,4 +1,7 @@
 from django.db import models
+from django.contrib.auth.base_user import AbstractBaseUser
+from django.contrib.auth.models import PermissionsMixin
+from core import managers
 
 # Create your models here.
 
@@ -12,20 +15,27 @@ class ModeBase(models.Model):
         managed = True
         abstract = True
 
-class Usuario(ModeBase):
+class Usuario(ModeBase, AbstractBaseUser, PermissionsMixin):
 
     class Perfil(models.TextChoices):
         Instrutor = 'I', 'Instrutor'
         Participante = 'P', 'Participante'
 
-    email = models.CharField(max_length=40, null=False)
+    username = models.CharField(max_length=40, null=False, unique=True)
     nome = models.CharField(max_length=100, null=True)
     apelido = models.CharField(max_length=20, null=False)
-    senha = models.CharField(max_length=20, null=False)
-    perfil = models.CharField(max_length=1, choices=Perfil, blank=False,null=False)
+    perfil = models.CharField(max_length=1, choices=Perfil.choices, blank=False, null=False)
+
+    # Campos da classe Auth (django)
+    password = models.CharField(max_length=256, null=False)
+    is_staff = models.BooleanField(default=True)
+
+    USERNAME_FIELD = 'username'
+
+    objects = managers.UserManager()
 
     def __str__(self):
-        return self.nome
+        return self.username
 
     class Meta:
         db_table = 'usuario'

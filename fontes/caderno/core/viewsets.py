@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from core import models,serializers, queries, serializers_params, filters
+from core import models,serializers, filters
 
 class UsuarioViewset(viewsets.ModelViewSet):
     queryset = models.Usuario.objects.all()
