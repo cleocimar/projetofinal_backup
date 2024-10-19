@@ -1,4 +1,16 @@
 -- Active: 1728143183557@@127.0.0.1@5433@caderno
+
+/* consultas simples */
+select * from usuario;
+select * from aula;
+select * from anexo_aula;
+select * from usuario_aula;
+select * from comentario;
+select * from anexo_comentario;
+
+
+
+
 /* Visualização de comentários e opiniões de Instrutor e Usuarios em uma Aula juntamente com seus Anexos */
 select coalesce( c.id, 0 ) as id_comentario,
        case when coalesce( c.tipo,'')='P' then 'próprio'
@@ -53,16 +65,6 @@ left join usuario u on u.id=ua.id_usuario
 where a.id in (1,2,3,4)
 order by coalesce( a.id, 0 ), coalesce( u.perfil, '' );
 
-
-
-
-/* consultas simples */
-select * from usuario;
-select * from aula;
-select * from anexo_aula;
-select * from usuario_aula;
-select * from comentario;
-select * from anexo_comentario;
 
 
 
